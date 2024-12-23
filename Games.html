@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="material/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000; 
+            color: #fff; 
+            margin: 0;
+            padding: 0;
+        }
+
+        #balance-container {
+            margin: 20px;
+            font-size: 18px;
+        }
+
+        .game-container{
+            margin: 10px auto;
+            max-width: 600px;
+        }
+
+        .game {
+            margin: 10px auto;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 10px solid #ff0000; 
+            border-radius: 12px;
+            background-color: #ffffff; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            width: 80%;
+            color: #000;
+            font-size: 20px;
+            font-style: oblique;
+        }
+
+        .task:hover {
+            transform: translateY(-5px);
+        }
+
+        .task-detail {
+            display: flex;
+            align-items: center;
+        }
+
+        .task-image img {
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+
+        .task h4 {
+            margin: 0;
+            font-size: 18px;
+            color: #f2f2f2;
+        }
+
+        .task-data {
+            display: flex;
+            align-items: center;
+            margin-top: 8px;
+        }
+
+        .task-data img {
+            margin-right: 5px;
+        }
+
+        .task-data h5 {
+            margin: 0;
+            color: #ffcc00;
+            font-size: 18px;
+        }
+
+        .task-button {
+            background-color: #ffffff; 
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .task-button:hover {
+            background-color: #2dd60c;
+        }
+
+        @media (max-width: 600px) {
+            .task-container {
+                max-width: 100%;
+            }
+
+            .task-button {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+            .task h4 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2><b>🏆</b></h2>
+
+    
+    <div id="balance-container">
+        <span id="balance">0</span> <img src="./material/images/MLogo.png"  width="50px" height="50px">total Dub
+    </div><br>
+    <h2><u><b>🏆 PLAY GAMES 🏆</b></u></h2>
+
+   
+   <div class="game-container">
+    <div class="game">
+        <img src="./material/images/Cards.png" width="80%" >CARDS
+        
+    </div>
+    COMING SOON
+   </div>
+   <div class="game-container">
+    <div class="game">
+        <img src="./material/images/Spin.gif" width="80%" >SPIN THE WHEEL
+        
+    </div>
+    COMING SOON
+   </div>
+   <div class="game-container">
+    <div class="game">
+        <img src="./material/images/Puzzle.png" width="80%" >PUZZLE
+        
+    </div>
+    COMING SOON
+   </div>
+
+        
+
+        <nav class="bottom-nav">
+            <a href="home.html" class="nav-item">
+                <i class="fas fa-home"></i>
+                <span>HOME</span>
+            </a>
+            <a href="leaderboard.html" class="nav-item">
+                <i class="fas fa-trophy"></i>
+                <span>GAMES</span>
+            </a>
+            <a href="invite-friends.html" class="nav-item">
+                <i class="fas fa-user-friends"></i>
+                <span>FRIENDS</span>
+            </a>
+            <a href="task.html" class="nav-item">
+                <i class="fas fa-tasks"></i>
+                <span>TASKS</span>
+            </a>
+            <a href="balance.html" class="nav-item">
+                <i class="fas fa-wallet"></i>
+                <span>Wallet</span>
+            </a>
+        </nav>
+
+    <script src="material/js/js.js"></script>
+    <script src="material/js/main.js"></script>
+</body>
+</html>
